@@ -7,7 +7,7 @@ def handler(event,context):
   i = 0
   filenames = []
   for file in files:
-    filename = "im-"+str(testresult)+"-"+str(i)+".png"
+    filename = "/tmp/im-"+str(testresult)+"-"+str(i)+".png"
     fh = open(filename, "wb")
     filenames.append(filename)
     i = i + 1
